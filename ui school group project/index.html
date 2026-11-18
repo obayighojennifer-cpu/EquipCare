@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquipCare / University of Ibadan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <i class="fa-solid fa-gears"></i>
+        </div>
+        <div class="brand-text">
+            <h1>EquipCare <span>. A7</span></h1>
+            <p>Equipment Maintenance Scheduling System</p>
+        </div>
+
+        <div class="users">
+            <div class="user-icon">
+                <img src="client 3 copy 2.jpg" alt="User" />
+            </div>
+            <div class="user-meta">
+                <strong>Maintenance Staff</strong>
+                <small>University of Ibadan</small>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="active">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Equipment</span>
+                </a>
+                 <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Maintenance Schedule</span>
+                </a>
+                 <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Maintenance History</span>
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                 <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Setting</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-panel dashboard-panel active">
+                <div class="page-heading">
+                    <h2>Maintenance Dashboard</h2>
+                    <p>Monitor equipment and manage maintenance activities.</p>
+                </div>
+                <section class="card">
+                    <div class="card">
+                        <div class="card-icon blue">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <p>Total Equipment</p>
+                            <h3>45</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon orange">
+                          <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <p>Scheduled</p>
+                            <h3>12</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon yellow">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div>
+                            <p>Pending</p>
+                            <h3>8</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon green">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <p>Completed</p>
+                            <h3>25</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-box">
+
+                  <div class="section-heading">
+                    <div>
+                      <h3>Upcoming Maintenance</h3>
+                      <p>
+                        Equipment that requires attention soon.
+                      </p>
+                    </div>
+
+                    <button class="view-btn">
+                      View All
+                    </button>
+                  </div>
+
+                  <div class="maintenance-list">
+
+                    <!-- GENERATOR -->
+                    <div class="maintenance-item">
+                      <div class="equipment-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                      </div>
+
+                      <div class="equipment-info">
+                        <h4>Generator 01</h4>
+                        <p>
+                          <i class="fa-solid fa-location-dot"></i>
+                          Faculty of Science
+                        </p>
+                      </div>
+
+                      <div class="maintenance-date">
+                        <strong>30 Sept 2026</strong>
+                        <span>Servicing</span>
+                      </div>
+
+                      <span class="status scheduled">
+                        Scheduled
+                      </span>
+                    </div>
+
+                    <!-- AIR CONDITIONER -->
+                    <div class="maintenance-item">
+                      <div class="equipment-icon">
+                        <i class="fa-solid fa-snowflake"></i>
+                      </div>
+
+                      <div class="equipment-info">
+                        <h4>Air Conditioner 04</h4>
+                        <p>
+                          <i class="fa-solid fa-location-dot"></i>
+                          Administrative Block
+                        </p>
+                      </div>
+
+                      <div class="maintenance-date">
+                        <strong>02 Oct 2026</strong>
+                        <span>Inspection</span>
+                      </div>
+
+                      <span class="status pending">
+                        Pending
+                      </span>
+                    </div>
+
+                    <!-- WATER PUMP -->
+                    <div class="maintenance-item">
+                      <div class="equipment-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                      </div>
+
+                      <div class="equipment-info">
+                        <h4>Water Pump 02</h4>
+                        <p>
+                          <i class="fa-solid fa-location-dot"></i>
+                          Student Hostel
+                        </p>
+                      </div>
+
+                      <div class="maintenance-date">
+                        <strong>05 Oct 2026</strong>
+                        <span>Repair</span>
+                      </div>
+
+                      <span class="status scheduled">
+                        Scheduled
+                      </span>
+                    </div>
+
+                  </div>
+
+                </section>
+
+                <!-- BOTTOM SECTION -->
+                <section class="bottom-grid">
+
+                  <!-- MAINTENANCE OVERVIEW -->
+                  <div class="section-box">
+
+                    <div class="section-heading">
+                      <div>
+                        <h3>Maintenance Overview</h3>
+                        <p>
+                          Current maintenance activities
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="overview">
+                      <div>
+                        <strong>25</strong>
+                        <span>Completed</span>
+                      </div>
+
+                      <div>
+                        <strong>8</strong>
+                        <span>Pending</span>
+                      </div>
+
+                      <div>
+                        <strong>12</strong>
+                        <span>Scheduled</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- QUICK ACTIONS -->
+                  <div class="section-box quick-actions">
+                    <h3>Quick Actions</h3>
+
+                    <button type="button" class="quick-action-btn" data-page="equipment" onclick="setActivePage('equipment')">
+                      <i class="fa-solid fa-screwdriver-wrench"></i>
+                      Equipment
+                    </button>
+
+                    <button type="button" class="quick-action-btn" data-page="schedule" onclick="setActivePage('schedule')">
+                      <i class="fa-solid fa-calendar-plus"></i>
+                      Schedule Maintenance
+                    </button>
+
+                    <button type="button" class="quick-action-btn" data-page="history" onclick="setActivePage('history'); renderHistoryTable();">
+                      <i class="fa-solid fa-clock-rotate-left"></i>
+                      View History
+                    </button>
+                  </div>
+
+                </section>
+            </section>
+            <!-- EQUIPMENT SECTION -->
+            <section class="equipment-section page-panel">
+
+  <div class="page-title">
+    <div>
+      <h2>Equipment</h2>
+      <p>Manage and monitor all registered equipment.</p>
+    </div>
+
+    <button class="add-btn" onclick="showEquipmentForm()">
+      <i class="fa-solid fa-plus"></i>
+       Add Equipment
+    </button>
+  </div>
+
+  <!-- ADD EQUIPMENT FORM -->
+  <div class="equipment-form" id="equipmentForm">
+    <h3>Add New Equipment</h3>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Equipment Name</label>
+        <input 
+          type="text" 
+          id="equipmentName" 
+          placeholder="e.g. Generator 02"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Equipment Type</label>
+        <select id="equipmentType">
+          <option value="">Select type</option>
+          <option>Generator</option>
+          <option>Air Conditioner</option>
+          <option>Water Pump</option>
+          <option>Computer</option>
+          <option>Laboratory Equipment</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Location</label>
+        <input 
+          type="text" 
+          id="equipmentLocation" 
+          placeholder="e.g. Faculty of Science"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Status</label>
+        <select id="equipmentStatus">
+          <option>Good</option>
+          <option>Needs Maintenance</option>
+          <option>Under Repair</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-buttons">
+      <button 
+        class="cancel-btn" 
+        onclick="hideEquipmentForm()"
+      >
+        Cancel
+      </button>
+
+      <button 
+        class="save-btn" 
+        onclick="addEquipment()"
+      >
+        <i class="fa-solid fa-floppy-disk"></i>
+        Save Equipment
+      </button>
+    </div>
+  </div>
+
+  <!-- EQUIPMENT TABLE -->
+  <div class="equipment-table-box">
+    <div class="section-heading">
+      <div>
+        <h3>Registered Equipment</h3>
+        <p>Equipment currently recorded in the system.</p>
+      </div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input 
+          type="text" 
+          id="equipmentSearch" 
+          placeholder="Search equipment..."
+        />
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Equipment</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="equipmentTableBody">
+          <tr>
+            <td><strong>Generator 01</strong></td>
+            <td>Generator</td>
+            <td>Faculty of Science</td>
+            <td>
+              <span class="equipment-status good">
+                Good
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>Air Conditioner 04</strong></td>
+            <td>Air Conditioner</td>
+            <td>Administrative Block</td>
+            <td>
+              <span class="equipment-status good">
+                Good
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>Water Pump 02</strong></td>
+            <td>Water Pump</td>
+            <td>Student Hostel</td>
+            <td>
+              <span class="equipment-status warning">
+                Needs Maintenance
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+<!-- MAINTENANCE SCHEDULE -->
+<section class="schedule-section">
+
+  <div class="page-title">
+    <div>
+      <h2>Maintenance Schedule</h2>
+      <p>Schedule and monitor upcoming equipment maintenance.</p>
+    </div>
+
+    <button class="add-btn" onclick="showScheduleForm()">
+      <i class="fa-solid fa-calendar-plus"></i>
+      Schedule Maintenance
+    </button>
+  </div>
+
+  <div class="equipment-form schedule-form" id="scheduleForm">
+    <h3>New Maintenance Schedule</h3>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="scheduleEquipment">Select Equipment</label>
+        <select id="scheduleEquipment">
+          <option value="">Select equipment</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="scheduleType">Maintenance Type</label>
+        <select id="scheduleType">
+          <option value="">Select type</option>
+          <option>Servicing</option>
+          <option>Inspection</option>
+          <option>Repair</option>
+          <option>Calibration</option>
+          <option>Replacement</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="scheduleDate">Maintenance Date</label>
+        <input type="date" id="scheduleDate" />
+      </div>
+
+      <div class="form-group">
+        <label for="scheduleTechnician">Technician</label>
+        <input type="text" id="scheduleTechnician" placeholder="e.g. Maintenance Team" />
+      </div>
+
+      <div class="form-group full-width">
+        <label for="scheduleNotes">Notes / Description</label>
+        <textarea id="scheduleNotes" rows="4" placeholder="Describe the maintenance required..."></textarea>
+      </div>
+    </div>
+
+    <div class="form-buttons">
+      <button type="button" class="cancel-btn" onclick="hideScheduleForm()">Cancel</button>
+      <button type="button" class="save-btn" onclick="addSchedule()">
+        <i class="fa-solid fa-floppy-disk"></i>
+        Save Schedule
+      </button>
+    </div>
+  </div>
+
+  <div class="equipment-table-box">
+    <div class="section-heading">
+      <div>
+        <h3>Upcoming Maintenance</h3>
+        <p>Scheduled maintenance activities.</p>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Equipment</th>
+            <th>Location</th>
+            <th>Maintenance Type</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- MAINTENANCE HISTORY -->
+<section class="history-section">
+  <div class="page-title">
+    <h2>Maintenance History</h2>
+  <button class="add-btn" onclick="viewHistory()">
+    <i class="fa-solid fa-clock-rotate-left"></i> View History</button>
+  </div>
+    
+
+  <div class="equipment-table-box">
+    <div class="section-heading">
+      <div>
+        <h3>Maintenance Records</h3>
+        <p>Previous maintenance activities.</p>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Equipment</th>
+            <th>Maintenance Type</th>
+            <th>Date</th>
+            <th>Technician</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
